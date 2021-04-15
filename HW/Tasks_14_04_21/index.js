@@ -18,6 +18,38 @@ let totalAmount = calcColor(tinOfPaint, valLength, valWidth, valHeight);
 
 console.log(totalAmount, 'totalAmount');
 
+// GOLDEN SAND
+
+// ! all numbers no more than 100
+
+const a1 = 60; // kg / ruble
+const a2 = 90; // kg / ruble
+const a3 = 30; // kg / ruble
+
+const b1 = 80; // kg / capacity
+const b2 = 75; // kg / capacity
+const b3 = 30; // kg / capacity
+
+function checkBenefit() {
+  let a = [];
+  let b = [];
+  let benefit = 0;
+  a.push(a1, a2, a3);
+  b.push(b1, b2, b3);
+  a.sort((a, b) => a - b);
+  b.sort((a, b) => a - b);
+
+  console.log("Check array", a, b);
+
+  for (let i = 0; i < 3; i++) {
+    benefit += a[i] * b[i];
+  };
+
+  console.log("Benefit:", benefit);
+}
+
+checkBenefit();
+
 
 // Task "HAPPY TICKET"
 
