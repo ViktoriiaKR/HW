@@ -1,3 +1,25 @@
+// "SUM OF MINIMUMS";
+
+let items = [
+  [1, 2],
+  [4, 3],
+  [5, 6]
+];
+
+function minSum(items) {
+  let sum = 0;
+
+  for (let i = 0; i < items.length; i++) {
+    sum += Math.min(...items[i])
+  };
+
+  return sum;
+};
+
+let resultMinSum = minSum(items);
+
+console.log(resultMinSum, 'sum of minimums');
+
 // Task 2: "TWO OLDEST AGES"
 
 const SomeArray = [3, 16, 4, 20, 5];
@@ -13,7 +35,7 @@ function oldestAge(array) {
 
 let resOldAge = oldestAge(SomeArray);
 
-console.log(resOldAge, 'resOldAge');
+console.log(resOldAge, 'two oldest ages');
 
 // Task 3: "SHORTEST WORD"
 
@@ -30,4 +52,4 @@ function shortestWord(string) {
 
 let resShortStr = shortestWord(SomeString);
 
-console.log(resShortStr, 'resShortStr');
+console.log(resShortStr, 'shortest word lenght');
