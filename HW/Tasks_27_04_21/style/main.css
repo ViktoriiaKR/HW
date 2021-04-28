@@ -1,0 +1,19 @@
+.search-block-wrap {
+    padding: 24px;
+}
+
+.description {
+    margin-top: 18px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: 16px;
+}
+
+.description p:first-child {
+    color: orange;
+    font-weight: bold;
+}
+
+.description p:last-child {
+    margin-bottom: 0;
+}

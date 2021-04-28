@@ -47,6 +47,7 @@ function declareWinner(firstAttacker, allPlayers) {
 const winnerName = declareWinner(firstAttacker, allPlayers);
 console.log(`winner is ${winnerName}`, winnerName);
 
+
 // Task: "PaginationHelper"
 
 // class PaginationHelper {
@@ -54,24 +55,37 @@ console.log(`winner is ${winnerName}`, winnerName);
 //     this.arrayValues = arrayValues;
 //     this.defaultPageSize = defaultPageSize;
 //   };
+
+//   itemCount = () => this.arrayValues.length;
+//   pageCount = () => Math.ceil(this.itemCount() / this.defaultPageSize);
+//   pageItemCount(index) {
+    // for (let i = 0; i < this.pageCount(); i++) {
+    //   if (index < 0 || index > i) {
+    //     return -1;
+    //   };
+    // };
+  // }
+//   pageItemCount = (pages, total, perPageSize) => {
+
+//     let pag = [];
+//     for(let i = 0; i < pages; i++) {
+//         let pageNum = i + 1;
+//         let start = (pageNum - 1) * perPageSize + 1;
+//         let end = Math.min(pageNum * perPageSize, total);
+
+//    console.log(start, end)
+
+//     }
+//   }
+
+  // function pageIndex(index) {
+  //    console.log(index)
+  // }
 // };
 
 // let helper = new PaginationHelper (['a', 'b', 'c', 'd', 'e', 'f'], 4);
 
-// itemCount = (array) => array.length;
-// pageCount = (total, itemsOnPage) => Math.ceil(total / itemsOnPage);
-// // pageItemCount = (defaultSize, resPageCount) => {
-// //   let page;
-// //   for (let i = 0; i < resPageCount; i++) {
-// //     page = i * defaultSize
-// //   }
-// // }
-
-// const total = itemCount(helper.arrayValues);
-// console.log(`total item: ${total}`);
-
-// const resultPageCount = pageCount(total, helper.defaultPageSize);
-// console.log(`количество страниц: ${resultPageCount}`);
-
-// // const resultPageSize = pageItemCount(helper.defaultPageSize, resultPageCount);
-// // console.log(`количество элементов на странице: ${resultPageSize}`);
+// console.log(helper.itemCount());
+// console.log(helper.pageCount());
+// console.log(helper.pageItemCount(3));
+// console.log(helper.pageIndex(5))
